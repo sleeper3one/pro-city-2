@@ -1,0 +1,332 @@
+/*
+Theme Name: ProSleepy
+Author: Sleepy Eye Studio / Studio Senne Oko
+Author URI: https://senneoko.pl
+
+Description: Motyw stworzony na potrzeby strony www.globalgloveline.com
+Version: 1.0
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@font-face {
+    font-family: Calibri;
+    src: url('calibrib.woff');
+}
+
+html {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: #f6f6f6;
+}
+
+body {
+    background: #f6f6f6;
+    margin: 5px auto 0px auto;
+    width: 1200px;
+}
+
+.rounded {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 10px;
+}
+
+img {
+    border: 1px solid #dbdbdb;
+}
+
+.no-border {
+    border: none !important;
+}
+
+
+/* header */
+
+.top-bar {
+    text-align: center;
+    font-family: Calibri;
+    margin: auto;
+    background-image: url(http://localhost/procity/wp-content/themes/prosleepy/images/top-bar.png);
+    background-repeat: repeat-x;
+    width: 1200px;
+    height: 39px;
+    margin-bottom: 3px;
+    box-shadow: 0px 3px 4px #ccc;
+}
+
+.top-bar-span {
+    padding: 0px 10px;
+    color: #fff;
+    line-height: 38px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.top-bar-span a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.top-bar-span img {
+    width: 26px;
+    height: 26px;
+}
+
+.bar-image {
+    margin: auto;
+    width: 1200px;
+    height: 190px;
+    background-color: #fff;
+}
+
+.low-bar {
+    font-family: Calibri;
+    margin: 1px auto 0px auto;
+    background-image: url(http://localhost/procity/wp-content/themes/prosleepy/images/top-bar.png);
+    background-repeat: repeat-x;
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.low-bar ul {
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.low-bar li {
+    text-align: center;
+}
+
+.low-bar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px #000;
+    padding: 0px 54px;
+}
+
+.low-bar a:hover {
+    color: #d9d9d9;
+}
+
+.low-bar ul li a {
+    border-right: 1px solid #fff;
+}
+
+.low-bar ul li:last-child a {
+    border-right: none;
+}
+
+#dropdown {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .low-bar {
+        display: none;
+    }
+    #dropdown {
+        display: block;
+        background: #00527D;
+        text-align: center;
+    }
+    #dropdown ul {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+    .dropbtn {
+        color: #fff;
+        background: rgba(204, 204, 204, 0.0);
+        font-size: 1.5rem;
+        border: none;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 10;
+    }
+    .dropdown-content li,
+    .dropdown-content a {
+        color: #00527D;
+        background: #fff;
+        list-style-type: none;
+        text-decoration: none;
+        padding: 10px;
+        margin: -1px;
+    }
+    .dropdown-content li:hover,
+    .dropdown-content a:hover {
+        color: #fff;
+        background: #045280;
+    }
+    .show {
+        display: block;
+        position: relative;
+    }
+}
+
+.crumb {
+    margin: auto;
+    width: 1200px;
+    padding: 5px;
+    font-size: .7rem;
+}
+
+.crumb a {
+    text-decoration: none;
+    color: #00527D;
+}
+
+
+/* page */
+
+.doc-frame {
+    display: table;
+    width: 1200px;
+    background: #fff;
+    margin: 0px auto 8px auto;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.left-menu {
+    margin: 0px;
+    padding: 10px;
+    width: 215px;
+    background: #f6f6f6;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    background: rgb(222, 222, 222);
+    background: linear-gradient(90deg, rgb(240, 240, 240) 0%, rgba(246, 246, 246, 1) 25%, rgba(246, 246, 246, 1) 75%, rgba(240, 240, 240, 1) 100%);
+}
+
+.left-menu li {
+    font-weight: bold;
+}
+
+.left-menu a {
+    text-decoration: none;
+    color: #00527D;
+    font-size: 0.9rem;
+}
+
+.left-menu a:hover {
+    color: #636466;
+}
+
+.page {
+    margin: 0px;
+    border-right: 1px solid #dbdbdb;
+}
+
+.left-menu,
+.page {
+    padding: 20px 15px;
+    display: table-cell;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.page-row {
+    display: table-row;
+}
+
+@media only screen and (max-width: 1200px) {
+    .page-row {
+        display: grid;
+    }
+    .left-menu {
+        width: auto;
+    }
+}
+
+
+/* footer */
+
+.foot {
+    margin: 0px auto 6px auto;
+    width: 1200px;
+    background: lightblue;
+    background: rgb(204, 204, 204);
+    background: linear-gradient(0deg, rgba(204, 204, 204, 1) 0%, rgba(218, 223, 219, 1) 100%);
+    border-top: 3px solid #045280;
+}
+
+.social-links {
+    padding: 10px;
+    text-align: right;
+}
+
+.social-links img {
+    width: 31px;
+    margin: 10px;
+}
+
+.social-links img:hover {
+    width: 36px;
+    transition: 0.5s;
+}
+
+.foot-info {
+    padding: 10px 20px;
+    display: table;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.foot-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.foot-info a:hover {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.product-menu {
+    display: table-cell;
+    width: 33.333333333%;
+}
+
+.main-menu {
+    display: table-cell;
+    width: 33.333333333%;
+    text-align: center;
+}
+
+.address {
+    display: table-cell;
+    width: 33.333333333%;
+    text-align: right;
+}
+
+.copyrights {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #a7a7a7;
+    padding: 8px;
+}
